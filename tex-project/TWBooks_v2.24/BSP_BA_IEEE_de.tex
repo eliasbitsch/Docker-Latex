@@ -1,0 +1,222 @@
+%
+% FH Technikum Wien
+% !TEX encoding = UTF-8 Unicode
+%
+% Erstellung von Master- und Bachelorarbeiten an der FH Technikum Wien mit Hilfe von LaTeX und der Klasse TWBOOK
+%
+% Um ein eigenes Dokument zu erstellen, müssen Sie folgendes ergänzen:
+% 1) Mit \documentclass[..] einstellen
+%    * Master- oder Bachelorarbeit
+%    * Studiengang
+%    * Sprache (english, german, ngerman)
+%    * Zitationsstandard (Harvard, IEEE) (Standard: IEEE)
+%    * Biber oder BibTeX als Literaturbackend (Biber, BibTeX) (Standard: Biber)
+% 2) Deckblatt, Kurzfassung, etc. ausfüllen
+% 3) und die Arbeit schreiben (die verwendeten Literaturquellen in Literatur.bib eintragen)
+%
+% Getestet mit TeXstudio mit Zeichenkodierung utf-8 (=ansinew/latin1) und TexLive unter Ubuntu
+% Zu beachten ist, dass die Kodierung der Datei mit der Kodierung des paketes inputenc zusammen passt!
+% Die Kodierung der Datei twbook.cls MUSS ANSI betragen!
+% Bei der Verwendung von UTF8 muss nicht nur die Kodierung des Dokuments auf UTF8 gestellt sein, sondern auch die des BibTex-Files!
+%
+% Bugreports und Feedback bitte per E-Mail an latex@technikum-wien.at
+%
+% Version V2.24 von 2024-12-19 otrebski
+%
+\documentclass[BMR,Bachelor,ngerman,IEEE]{twbook}%\documentclass[Bachelor,BMR,ngerman]{twbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Definieren Sie hier weitere Literaturdatenbanken
+%\addbibresource{Literaturdatenbank.bib}
+
+% Die nachfolgenden Pakete stellen sonst nicht benötigte Features zur Verfügung
+\usepackage{blindtext}
+
+%
+% Einträge für Deckblatt, Kurzfassung, etc.
+%
+\title{Titel der Arbeit\\Titel der }
+\author{Titel Vorname Name, Titel}
+\studentnumber{XXXXXXXXXXXXXX}
+%\author{Titel Vorname Name, Titel\and{}Titel Vorname Name, Titel}
+%\studentnumber{XXXXXXXXXXXXXXX\and{}XXXXXXXXXXXXXXX}
+\supervisor{Titel Vorname Name, Titel}
+%\supervisor[Begutachter]{Titel Vorname Name, Titel}
+%\supervisor[Begutachterin]{Titel Vorname Name, Titel}
+%\secondsupervisor{Titel Vorname Name, Titel}
+%\secondsupervisor[Begutachter]{Titel Vorname Name, Titel}
+%\secondsupervisor[Begutachterinnen]{Titel Vorname Name, Titel}
+\place{Wien}
+\kurzfassung{\blindtext}
+\schlagworte{Schlagwort1, Schlagwort2, Schlagwort3, Schlagwort5}
+\outline{\blindtext}
+\keywords{Keyword1, Keyword2, Keyword3, Keyword4}
+%\acknowledgements{\blindtext}
+
+\begin{document}
+
+\maketitle
+
+%
+% .. und hier beginnt die eigentliche Arbeit. Viel Erfolg beim Verfassen!
+%
+\chapter{Erste Überschrift der Ebene 1 (chapter)}
+\blinddocument
+
+\blindmathpaper
+
+\section{Erste Überschrift Tiefe 2 (section)}
+\blindtext
+
+\subsection{Erste Überschrift Tiefe 3 (subsection)}
+\blindtext
+
+\subsubsection{Erste Überschrift Tiefe 4 (subsubsection)}
+\blindtext
+
+\chapter{Zweite Überschrift der Tiefe 1 (chapter)}
+\blindtext
+
+\section{Zweite Überschrift Tiefe 2 (section)}
+\blindtext
+
+\section{Zweite Überschrift Tiefe 2 (section)}
+\blindtext
+
+\subsection{Zweite Überschrift Tiefe 3 (subsection)}
+\blindtext
+
+\subsection{Dritte Überschrift Tiefe 3 (subsection)}
+\blindtext
+
+\subsubsection{Zweite Überschrift Tiefe 4 (subsubsection)}
+\blindtext
+
+\noindent Querverweise werden in \LaTeX{} automatisch erzeugt und verwaltet, damit sie leicht aktualisiert werden können. Hier wird zum Beispiel auf Abbildung \ref{Abb1} verwiesen.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{PICs/buchruecken}
+\caption{Beispiel für die Beschriftung eines Buchrückens.}\label{Abb1}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{PICs/buchruecken}
+\caption{2. Beispiel für die Beschriftung eines Buchrückens.}\label{Abb2}
+\end{figure}
+
+Und hier ist ein Verweis auf Tabelle \ref{tab1}. Das gezeigte Tabellenformat ist nur ein Beispiel. Tabellen können individuell gestaltet werden.
+
+\begin{table}[!htbp]
+\centering
+\caption{Semesterplan der Lehrveranstaltung \glqq Angewandte Mathematik\grqq.}\label{tab1}
+\begin{tabular}{| p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} |}\hline
+Datum & Thema & Raum\\\hline
+20.08.2008 & Graphentheorie & HS 3.13\\
+01.10.2008 & Biomathematik & HS 1.05\\\hline
+\end{tabular}
+\end{table}
+\begin{table}[!htbp]
+\centering
+\caption{2. Semesterplan der Lehrveranstaltung \glqq Angewandte Mathematik\grqq.}\label{tab2}
+\begin{tabular}{| p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} |}\hline
+Datum & Thema & Raum\\\hline
+20.08.2008 & Graphentheorie & HS 3.13\\
+01.10.2008 & Biomathematik & HS 1.05\\\hline
+\end{tabular}
+\end{table}
+
+Hier wird auf die Formel \ref{Gl1} verwiesen.
+
+\begin{align}
+x = -\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}\label{Gl1}
+\end{align}
+\begin{align}
+x = -\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}\label{Gl2}
+\end{align}
+
+Literaturverweise sollten automatisch verwaltet werden, vor allem, wenn es viele Quellenverweise gibt. Beispiele sind  \cite{Ko05a}, \cite{Ko05b}, \cite{MiGo05}, \cite{TeGo14}, \cite{HuHa07}, \cite{HuZi10}, \cite{ZiKu07}, \cite{He07}, \cite{SIE11}, \cite{SIE14}, \cite{ISO98}, \cite{ATM11}, \cite{Hu11}, \cite{Po10}. Das verwendete Zitierformat (bzw.~das Format des Literaturverzeichnisses) ist entspechend der Vorgaben der Studiengänge zu wählen.
+Es wird dringend empfohlen, Biber oder BibTeX~zu verwenden (wie in diesen Beispielen) \cite{Calis2020}.
+
+\chapter{Dritte Überschrift der Tiefe 1 (chapter)}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{PICs/buchruecken}
+\caption{3. Beispiel für die Beschriftung eines Buchrückens.}\label{Abb3}
+\end{figure}
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{PICs/buchruecken}
+\caption{4. Beispiel für die Beschriftung eines Buchrückens.}\label{Abb4}
+\end{figure}
+
+
+\begin{table}[!htbp]
+\centering
+\caption{3. Semesterplan der Lehrveranstaltung \glqq Angewandte Mathematik\grqq.}\label{tab3}
+\begin{tabular}{| p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} |}\hline
+Datum & Thema & Raum\\\hline
+20.08.2008 & Graphentheorie & HS 3.13\\
+01.10.2008 & Biomathematik & HS 1.05\\\hline
+\end{tabular}
+\end{table}
+\begin{table}[!htbp]
+\centering
+\caption{4. Semesterplan der Lehrveranstaltung \glqq Angewandte Mathematik\grqq.}\label{tab4}
+\begin{tabular}{| p{0.3\linewidth} | p{0.3\linewidth} | p{0.3\linewidth} |}\hline
+Datum & Thema & Raum\\\hline
+20.08.2008 & Graphentheorie & HS 3.13\\
+01.10.2008 & Biomathematik & HS 1.05\\\hline
+\end{tabular}
+\end{table}
+
+\begin{align}
+x = -\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}\label{Gl3}
+\end{align}
+\begin{align}
+x = -\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}\label{Gl4}
+\end{align}
+
+% Hier können Sie Ihre KI-Tools dokumentieren. Diese werden automatisch in eine Tabelle integriert.
+\aitoolentry{DeepL Translate}{Translation of an article in English}{Source (XXX), Chapter X on page X-X}
+\aitoolentry{Chat GPT 4.0}{Grammar and Spelling}{"Please list issues with spelling and grammar in the following text: ..." Entire document}
+
+%
+% Hier beginnen die Verzeichnisse.
+%
+\clearpage
+\printbibliography
+\clearpage
+
+% Das Abbildungsverzeichnis
+\listoffigures
+\clearpage
+
+% Das Tabellenverzeichnis
+\listoftables
+\clearpage
+
+% Das Verzeichnis über die verwendeten KI-Tools
+\listaitools
+\clearpage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{\listacroname}
+\chapter*{\listacroname}
+\begin{acronym}[XXXXX]
+    \acro{ABC}[ABC]{Alphabet}
+    \acro{WWW}[WWW]{world wide web}
+    \acro{ROFL}[ROFL]{Rolling on floor laughing}
+\end{acronym}
+
+%
+% Hier beginnt der Anhang.
+%
+\clearpage
+\appendix
+\chapter{Anhang A}
+\clearpage
+\chapter{Anhang B}
+
+\end{document}
