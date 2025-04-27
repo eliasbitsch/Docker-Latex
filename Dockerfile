@@ -13,10 +13,13 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-
+# Installiere zusätzliche Pakete für die Verwendung von BibLaTeX
 RUN apt-get update && apt-get install -y \
     texlive-lang-german \
     texlive-bibtex-extra
+
+RUN apt-get update && apt-get install -y \
+    biber
 
 # Setze Arbeitsverzeichnis
 WORKDIR /workspace
