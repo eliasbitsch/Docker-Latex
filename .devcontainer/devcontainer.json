@@ -1,48 +1,52 @@
 {
   "name": "LaTeX DevContainer",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "../Dockerfile",
     "context": "."
   },
-  "settings": {
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "remote.autoForwardPortsSource": "hybrid",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "git.autofetch": true,
-    "makefile.configureOnOpen": true,
-    "cmake.showOptionsMovedNotification": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "latex-workshop.latex.autoBuild.run": "onSave",
-    "latex-workshop.latex.recipes": [
-      {
-        "name": "latexmk (build dir)",
-        "tools": [
-          "latexmk"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "remote.autoForwardPortsSource": "hybrid",
+        "liveServer.settings.donotShowInfoMsg": true,
+        "git.autofetch": true,
+        "makefile.configureOnOpen": true,
+        "cmake.showOptionsMovedNotification": false,
+        "security.workspace.trust.untrustedFiles": "open",
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk (build dir)",
+            "tools": [
+              "latexmk"
+            ]
+          }
+        ],
+        "latex-workshop.latex.tools": [
+          {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+              "-pdf",
+              "-outdir=build",
+              "-interaction=nonstopmode",
+              "-synctex=1",
+              "%DOC%"
+            ]
+          }
         ]
-      }
-    ],
-    "latex-workshop.latex.tools": [
-      {
-        "name": "latexmk",
-        "command": "latexmk",
-        "args": [
-          "-pdf",
-          "-outdir=build",
-          "-interaction=nonstopmode",
-          "-synctex=1",
-          "%DOC%"
-        ]
-      }
-    ]
+      },
+      "extensions": [
+        "james-yu.latex-workshop",
+        "github.copilot",
+        "github.copilot-chat",
+        "iamhyc.overleaf-workshop",
+        "tomoki1207.pdf"
+      ]
+    }
   },
-  "extensions": [
-    "james-yu.latex-workshop",
-    "github.copilot",
-    "github.copilot-chat",
-    "iamhyc.overleaf-workshop",
-    "tomoki1207.pdf"
-  ],
   "remoteUser": "root",
   "mounts": [
     "source=${localWorkspaceFolder}/tex-project,target=/workspace,type=bind"
