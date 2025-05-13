@@ -30,8 +30,15 @@ my-project/
 ---
 
 ## Setup
+
 ```bash
-./start
+git clone https://github.com/eliasbitsch/Docker-Latex.git
+```
+```bash
+cd Docker-Latex
+```
+```bash
+./run.sh
 ```
 - This builds and starts the Docker container.
 - In VS Code, Devcontainer starts automatically if you reopen in container.
