@@ -51,34 +51,6 @@
       \verb http://www.atmel.com/dyn/resources/prod%5C_documents/doc2466.pdf
       \endverb
     \endentry
-    \entry{Calis2020}{book}{}
-      \name{author}{1}{}{%
-        {{hash=46816ee1cf4c41232093bcd460dcd58c}{%
-           family={Calis},
-           familyi={C\bibinitperiod},
-           given={Murat},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Heidelberg}%
-      }
-      \list{publisher}{1}{%
-        {dpunkt.verlag}%
-      }
-      \strng{namehash}{46816ee1cf4c41232093bcd460dcd58c}
-      \strng{fullhash}{46816ee1cf4c41232093bcd460dcd58c}
-      \strng{bibnamehash}{46816ee1cf4c41232093bcd460dcd58c}
-      \strng{authorbibnamehash}{46816ee1cf4c41232093bcd460dcd58c}
-      \strng{authornamehash}{46816ee1cf4c41232093bcd460dcd58c}
-      \strng{authorfullhash}{46816ee1cf4c41232093bcd460dcd58c}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-3-96088-468-2}
-      \field{title}{Roboter mit ROS -- Bots konstruieren und mit Open Source programmieren}
-      \field{year}{2020}
-    \endentry
     \entry{MiGo05}{book}{}
       \name{author}{3}{}{%
         {{hash=0743efb276e9219ee664a9b3dbd60619}{%
@@ -118,18 +90,18 @@
     \endentry
     \entry{He07}{misc}{}
       \name{author}{1}{}{%
-        {{hash=b7d67fea454fce1813018f32d672e4df}{%
-           family={Hemetsbergerer},
+        {{hash=63ab690b6c76f1af29a9419e83836aa2}{%
+           family={Hemetsberger},
            familyi={H\bibinitperiod},
            given={Hannes},
            giveni={H\bibinitperiod}}}%
       }
-      \strng{namehash}{b7d67fea454fce1813018f32d672e4df}
-      \strng{fullhash}{b7d67fea454fce1813018f32d672e4df}
-      \strng{bibnamehash}{b7d67fea454fce1813018f32d672e4df}
-      \strng{authorbibnamehash}{b7d67fea454fce1813018f32d672e4df}
-      \strng{authornamehash}{b7d67fea454fce1813018f32d672e4df}
-      \strng{authorfullhash}{b7d67fea454fce1813018f32d672e4df}
+      \strng{namehash}{63ab690b6c76f1af29a9419e83836aa2}
+      \strng{fullhash}{63ab690b6c76f1af29a9419e83836aa2}
+      \strng{bibnamehash}{63ab690b6c76f1af29a9419e83836aa2}
+      \strng{authorbibnamehash}{63ab690b6c76f1af29a9419e83836aa2}
+      \strng{authornamehash}{63ab690b6c76f1af29a9419e83836aa2}
+      \strng{authorfullhash}{63ab690b6c76f1af29a9419e83836aa2}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}

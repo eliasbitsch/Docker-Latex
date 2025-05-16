@@ -1,15 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'build/BSP_BA_IEEE_de.blg'
-[55] biber:340> INFO - === Sat Apr 26, 2025, 17:53:13
-[73] Biber.pm:419> INFO - Reading 'build/BSP_BA_IEEE_de.bcf'
-[112] Biber.pm:979> INFO - Found 15 citekeys in bib section 0
-[120] Biber.pm:4419> INFO - Processing section 0
-[132] Biber.pm:4610> INFO - Looking for bibtex file 'Literatur.bib' for section 0
-[134] bibtex.pm:1713> INFO - LaTeX decoding ...
-[166] bibtex.pm:1519> INFO - Found BibTeX data source 'Literatur.bib'
-[269] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[269] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[269] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[270] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[286] bbl.pm:660> INFO - Writing 'build/BSP_BA_IEEE_de.bbl' with encoding 'UTF-8'
-[290] bbl.pm:763> INFO - Output to build/BSP_BA_IEEE_de.bbl
+[54] biber:340> INFO - === Fri May 16, 2025, 11:24:55
+[71] Biber.pm:418> INFO - Reading 'build/BSP_BA_IEEE_de.bcf'
+[110] Biber.pm:972> INFO - Found 14 citekeys in bib section 0
+[118] Biber.pm:4383> INFO - Processing section 0
+[128] Biber.pm:4574> INFO - Looking for bibtex file 'Literatur.bib' for section 0
+[130] bibtex.pm:1713> INFO - LaTeX decoding ...
+[161] bibtex.pm:1518> INFO - Found BibTeX data source 'Literatur.bib'
+[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[257] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[258] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[258] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
+[272] bbl.pm:654> INFO - Writing 'build/BSP_BA_IEEE_de.bbl' with encoding 'UTF-8'
+[278] bbl.pm:757> INFO - Output to build/BSP_BA_IEEE_de.bbl

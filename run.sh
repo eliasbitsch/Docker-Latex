@@ -2,8 +2,8 @@
 # Run-Skript zum Bauen des Docker-Images und Starten des Containers mit devcontainer.json-kompatiblen Einstellungen
 
 # Setze Variablen
-IMAGE_NAME="latex-devcontainer"
-CONTAINER_NAME="latex-devcontainer-instance"
+IMAGE_NAME="docker-latex-image"
+CONTAINER_NAME="docker-latex-container"
 HOST_PROJECT_DIR="$(pwd)/tex-project"
 
 # Erstelle den tex-project Ordner, falls er nicht existiert
