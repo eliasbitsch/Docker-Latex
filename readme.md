@@ -11,16 +11,18 @@ Auto-compiles LaTeX **on save** (Ctrl+S) using **James-Yu.latex-workshop**.
 ## Folder Structure
 
 ```
-my-project/
-├── .devcontainer/         # VS Code settings
-│   └── devcontainer.json
-├── tex-project/
-│   └── TWBooks_v2.24/      # Your LaTeX files
-│       ├── BSP_BA_IEEE_de.tex
-│       └── build/         # Output PDFs
-├── Dockerfile              # Docker config
-├── start                   # Build/run script
-└── README.md               # This guide
+├── Dockerfile          # Docker build instructions
+├── readme.md           # Project documentation
+├── run.sh              # Script to run/build project
+└── tex-project
+    └── TWBooks_v2.24
+        ├── *.pdf       # Output PDFs
+        ├── *.tex       # LaTeX source file
+        ├── Literatur.bib # Bibliography
+        ├── PICs        # Images used in the document
+        ├── build       # Build output folder
+        └── twbook.cls  # LaTeX class file
+
 ```
 ---
 
