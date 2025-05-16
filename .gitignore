@@ -1,0 +1,17 @@
+# Ignore all .log files
+*.log
+
+# Ignore build folders
+build/
+dist/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env
+
+# Ignore all .tex and .pdf files anywhere in the project
+*.tex
+*.pdf
