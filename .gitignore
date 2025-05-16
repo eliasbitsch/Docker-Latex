@@ -15,3 +15,6 @@ Thumbs.db
 # Ignore all .tex and .pdf files anywhere in the project
 *.tex
 *.pdf
+
+# Ignore the PICs folder and its contents
+/tex-project/TWBooks_v2.24/PICs/
