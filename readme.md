@@ -1,5 +1,7 @@
 # LaTeX Devcontainer Setup
 
+https://github.com/user-attachments/assets/7280f287-535d-4674-8b51-a1b0cdc3cc18
+
 A basic LaTeX environment in Docker for **VS Code** or manual use.  
 Supports **German** (`ngerman`) and **biblatex**.  
 Auto-compiles LaTeX **on save** (Ctrl+S) using **James-Yu.latex-workshop**.
