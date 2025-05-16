@@ -18,3 +18,5 @@ Thumbs.db
 
 # Ignore the PICs folder and its contents
 /tex-project/TWBooks_v2.24/PICs/
+
+/tex-project/TWBooks_v2.24/build/
