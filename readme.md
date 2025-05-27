@@ -34,8 +34,7 @@ Auto-compiles LaTeX **on save** (Ctrl+S) using **James-Yu.latex-workshop**.
 ---
 
 ## Setup
-1.
-```bash
+1. ```bash
 git clone https://github.com/eliasbitsch/Docker-Latex.git
 ```
 2.
